@@ -6,11 +6,10 @@
     <title>Dra. Rebeca Teja Gutiérrez - Programa de Trabajo 2026-2030</title>
     <style>
         :root {
-            --morado-profundo: #2C163A; 
+            --lila-oscuro-header: #512E5F; /* Lila oscuro formal para el encabezado */
             --morado-principal: #4A235A; 
             --morado-claro: #D7BDE2; 
-            /* Se cambia el fondo general a un lila suave, sobrio y no brillante */
-            --fondo-lila-suave: #F3EBF6; 
+            --fondo-lila-suave: #F3EBF6; /* Fondo general lila suave y no brillante */
             --texto-oscuro: #2C3E50;
             --texto-claro: #FFFFFF;
         }
@@ -29,43 +28,59 @@
         }
 
         header {
-            background: linear-gradient(135deg, var(--morado-profundo), var(--morado-principal));
+            background-color: var(--lila-oscuro-header);
             color: var(--texto-claro);
             padding: 50px 20px;
-            text-align: center;
             border-bottom: 6px solid var(--morado-claro);
         }
 
-        .perfil-foto-container {
-            margin-bottom: 20px;
+        /* Contenedor flexible para poner la foto y los textos a un lado */
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            text-align: left;
         }
 
+        .perfil-foto-container {
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        /* Tamaño grande para que no pierda calidad visual */
         .perfil-foto {
-            width: 140px;
-            height: 140px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid var(--morado-claro);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border: 5px solid var(--morado-claro);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-texto {
+            flex: 1;
+            min-width: 280px;
         }
 
         header h1 {
-            font-size: 2.4rem;
+            font-size: 2.3rem;
             margin-bottom: 10px;
         }
 
         header h2 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 300;
             color: var(--morado-claro);
             margin-bottom: 15px;
         }
 
         header p {
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-style: italic;
-            max-width: 800px;
-            margin: 0 auto;
         }
 
         .container {
@@ -84,7 +99,7 @@
         }
 
         h3 {
-            color: var(--morado-profundo);
+            color: var(--lila-oscuro-header);
             font-size: 1.6rem;
             margin-bottom: 20px;
             border-bottom: 2px solid var(--fondo-lila-suave);
@@ -127,7 +142,7 @@
         }
 
         .tarjeta-pilar h5 {
-            color: var(--morado-profundo);
+            color: var(--lila-oscuro-header);
             font-size: 1.1rem;
             margin-bottom: 10px;
         }
@@ -137,7 +152,6 @@
             margin-bottom: 0;
         }
 
-        /* Estilo para el enlace de redes sociales */
         .social-link {
             display: inline-block;
             margin-top: 15px;
@@ -156,7 +170,7 @@
         }
 
         footer {
-            background-color: var(--morado-profundo);
+            background-color: var(--lila-oscuro-header);
             color: var(--texto-claro);
             text-align: center;
             padding: 25px;
@@ -168,7 +182,10 @@
         }
 
         @media (max-width: 768px) {
-            header h1 { font-size: 1.9rem; }
+            .header-content {
+                text-align: center;
+            }
+            header h1 { font-size: 1.8rem; }
             section { padding: 20px; }
         }
     </style>
@@ -176,12 +193,16 @@
 <body>
 
     <header>
-        <div class="perfil-foto-container">
-            <img src="foto.jpg" alt="Dra. Rebeca Teja Gutiérrez" class="perfil-foto">
+        <div class="header-content">
+            <div class="perfil-foto-container">
+                <img src="foto.jpg" alt="Dra. Rebeca Teja Gutiérrez" class="perfil-foto">
+            </div>
+            <div class="header-texto">
+                <h1>Dra. Rebeca Teja Gutiérrez</h1>
+                <h2>Candidata a la Dirección del Centro Universitario UAEM Texcoco (Periodo 2026–2030)</h2>
+                <p>Hacia un Centro Universitario UAEMéx Texcoco cercano, incluyente, progresista y comprometido con su región. Tres sectores, una comunidad universitaria; seis pilares, una visión de transformación.</p>
+            </div>
         </div>
-        <h1>Dra. Rebeca Teja Gutiérrez</h1>
-        <h2>Candidata a la Dirección del Centro Universitario UAEM Texcoco (Periodo 2026–2030)</h2>
-        <p>Hacia un Centro Universitario UAEMéx Texcoco cercano, incluyente, progresista y comprometido con su región. Tres sectores, una comunidad universitaria; seis pilares, una visión de transformación.</p>
     </header>
 
     <div class="container">
