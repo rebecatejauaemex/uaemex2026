@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de Trabajo - Juan Carlos Moreno Sánchez</title>
+    <title>Dra. Rebeca Teja Gutiérrez - Programa de Trabajo 2026-2030</title>
     <style>
-        /* Paleta de colores: Tonos de morado, blanco y gris oscuro */
         :root {
-            --morado-oscuro: #4A148C; /* Morado profundo */
-            --morado-medio: #7B1FA2; /* Morado vibrante */
-            --morado-claro: #E1BEE7; /* Fondo lila suave */
-            --texto-oscuro: #333333;
-            --texto-claro: #FFFFFF;
-            --fondo-gris: #F5F5F5;
+            --morado-profundo: #38006b;
+            --morado-principal: #512da8;
+            --morado-claro: #d1c4e9;
+            --morado-muy-claro: #f3e5f5;
+            --texto-oscuro: #212121;
+            --texto-claro: #ffffff;
+            --fondo-gris: #faf9fb;
         }
 
-        /* Reseteo básico */
         * {
             margin: 0;
             padding: 0;
@@ -29,203 +28,243 @@
             line-height: 1.6;
         }
 
-        /* Encabezado Principal */
         header {
-            background: linear-gradient(135deg, var(--morado-oscuro), var(--morado-medio));
+            background: linear-gradient(135deg, var(--morado-profundo), var(--morado-principal));
             color: var(--texto-claro);
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
-            border-bottom: 5px solid var(--morado-claro);
+            border-bottom: 6px solid var(--morado-claro);
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             margin-bottom: 10px;
-            letter-spacing: 1px;
         }
 
         header h2 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 300;
             color: var(--morado-claro);
+            margin-bottom: 15px;
         }
 
-        /* Contenedor principal */
+        header p {
+            font-size: 1rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         .container {
-            max-width: 1000px;
-            margin: 40px auto;
+            max-width: 1100px;
+            margin: 30px auto;
             padding: 0 20px;
         }
 
-        /* Secciones */
         section {
             background-color: var(--texto-claro);
-            padding: 40px;
-            margin-bottom: 40px;
+            padding: 35px;
+            margin-bottom: 30px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-left: 5px solid var(--morado-medio);
+            box-shadow: 0 4px 10px rgba(81, 45, 168, 0.08);
+            border-left: 6px solid var(--morado-principal);
         }
 
-        section h3 {
-            color: var(--morado-oscuro);
-            font-size: 1.8rem;
+        h3 {
+            color: var(--morado-profundo);
+            font-size: 1.6rem;
             margin-bottom: 20px;
-            border-bottom: 2px solid var(--morado-claro);
-            padding-bottom: 10px;
+            border-bottom: 2px solid var(--morado-muy-claro);
+            padding-bottom: 8px;
         }
 
-        /* Estilos para el texto y listas */
+        h4 {
+            color: var(--morado-principal);
+            font-size: 1.2rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
         p {
             margin-bottom: 15px;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         ul {
-            list-style-type: none;
-            margin-left: 10px;
+            margin-left: 20px;
+            margin-bottom: 15px;
         }
 
         ul li {
-            margin-bottom: 10px;
-            padding-left: 25px;
-            position: relative;
-            font-size: 1.1rem;
+            margin-bottom: 8px;
         }
 
-        ul li::before {
-            content: "■";
-            color: var(--morado-medio);
-            position: absolute;
-            left: 0;
-            top: 2px;
-            font-size: 0.8rem;
-        }
-
-        /* Tarjetas para los ejes de trabajo */
-        .grid-ejes {
+        .grid-pilares {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
 
-        .tarjeta-eje {
-            background-color: var(--morado-claro);
+        .tarjeta-pilar {
+            background-color: var(--morado-muy-claro);
             padding: 20px;
             border-radius: 6px;
-            transition: transform 0.3s ease;
+            border-top: 4px solid var(--morado-principal);
         }
 
-        .tarjeta-eje:hover {
-            transform: translateY(-5px);
-        }
-
-        .tarjeta-eje h4 {
-            color: var(--morado-oscuro);
+        .tarjeta-pilar h5 {
+            color: var(--morado-profundo);
+            font-size: 1.1rem;
             margin-bottom: 10px;
-            font-size: 1.3rem;
         }
 
-        .tarjeta-eje p {
-            font-size: 1rem;
+        .tarjeta-pilar p {
+            font-size: 0.95srem;
             margin-bottom: 0;
         }
 
-        /* Pie de página */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid var(--morado-claro);
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--morado-principal);
+            color: var(--texto-claro);
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--morado-muy-claro);
+        }
+
         footer {
-            background-color: var(--morado-oscuro);
+            background-color: var(--morado-profundo);
             color: var(--texto-claro);
             text-align: center;
-            padding: 20px;
+            padding: 25px;
             margin-top: 40px;
         }
 
         footer p {
             margin-bottom: 5px;
-            font-size: 0.9rem;
         }
 
-        /* Responsividad */
         @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
-            header h2 { font-size: 1.2rem; }
-            section { padding: 25px; }
+            header h1 { font-size: 1.9rem; }
+            section { padding: 20px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <!-- Tu nombre, ya prellenado con la información de tu perfil -->
-        <h1>Juan Carlos Moreno Sánchez</h1>
-        <h2>Plan de Trabajo - Dirección del Centro Universitario UAEM Texcoco</h2>
+        <h1>Dra. Rebeca Teja Gutiérrez</h1>
+        <h2>Candidata a la Dirección del Centro Universitario UAEM Texcoco (Periodo 2026–2030)</h2>
+        <p>Hacia un Centro Universitario UAEMéx Texcoco cercano, incluyente, progresista y comprometido con su región. Tres sectores, una comunidad universitaria; seis pilares, una visión de transformación.</p>
     </header>
 
     <div class="container">
         
-        <!-- SECCIÓN DE PERFIL / CURRÍCULUM -->
-        <section id="perfil">
-            <h3>Perfil Profesional</h3>
-            <p><strong>Candidato a Doctor en Ciencias de la Computación</strong></p>
-            <p>Especialista en sistemas de software, gestión de bases de datos e infraestructura tecnológica. Con amplia experiencia en la gestión de proyectos de alto nivel, coordinación de equipos multidisciplinarios y optimización de recursos.</p>
-            
-            <h4 style="color: var(--morado-medio); margin: 20px 0 10px 0;">Experiencia Destacada</h4>
+        <!-- PRESENTACIÓN Y DECLARACIÓN -->
+        <section id="presentacion">
+            <h3>Presentación del Programa de Trabajo</h3>
+            <p>El Centro Universitario UAEMéx Texcoco es una comunidad construida a lo largo de tres décadas por estudiantes, personal académico y administrativo[cite: 2]. El periodo 2026–2030 representa una oportunidad para reconocer esa trayectoria y construir una nueva etapa de desarrollo institucional con una gestión cercana, basada en evidencia, con diálogo, planeación, seguimiento y rendición de cuentas[cite: 2].</p>
+            <p><strong>Nota sobre herramientas:</strong> Para la elaboración del programa de trabajo se utilizó Grammarly como apoyo ortográfico y gramatical, y ChatGPT (OpenAI) para la sistematización y estructuración de la información, asumiendo la autora la total responsabilidad del contenido[cite: 2].</p>
+        </section>
+
+        <!-- SÍNTESIS DEL DIAGNÓSTICO -->
+        <section id="diagnostico">
+            <h3>Diagnóstico General Estratégico del CUTEX 2026</h3>
+            <p>El CUTEX cuenta con fortalezas importantes pero también con áreas de atención identificadas a partir de la estadística institucional y los procesos recientes[cite: 2]:</p>
             <ul>
-                <li>[Reemplazar con experiencia relevante de tu CV 1]</li>
-                <li>[Reemplazar con experiencia relevante de tu CV 2]</li>
-                <li>[Reemplazar con experiencia relevante de tu CV 3]</li>
+                <li><strong>Comunidad y Matrícula:</strong> Cerca de 5,000 estudiantes (con predominio femenino y presencia de estudiantes con discapacidad y hablantes de lenguas indígenas)[cite: 2].</li>
+                <li><strong>Trayectorias:</strong> Descenso en el abandono escolar y avance en la eficiencia terminal y titulación por cohorte[cite: 2].</li>
+                <li><strong>Capacidad Académica:</strong> Sólida habilitación de Profesores de Tiempo Completo (la mayoría con doctorado, perfil PRODEP y miembros del SNII) y seis cuerpos académicos (cinco consolidados)[cite: 2].</li>
+                <li><strong>Infraestructura y Servicios:</strong> Necesidades estructurales, hidráulicas, eléctricas y de conectividad que requieren mantenimiento preventivo, planeado y estructurado[cite: 2].</li>
             </ul>
         </section>
 
-        <!-- SECCIÓN DEL PLAN DE TRABAJO -->
-        <section id="plan-de-trabajo">
-            <h3>Programa de Trabajo</h3>
-            <p>Mi propuesta para la Dirección del Centro Universitario se fundamenta en los siguientes ejes estratégicos orientados a la excelencia académica, la innovación tecnológica y el bienestar de la comunidad:</p>
-            
-            <div class="grid-ejes">
-                <!-- EJE 1 -->
-                <div class="tarjeta-eje">
-                    <h4>Eje 1: [Nombre del Eje - Ej. Excelencia Académica]</h4>
-                    <p>[Pega aquí la descripción o las acciones principales correspondientes al primer eje de tu documento Word.]</p>
+        <!-- LOS SEIS PILARES -->
+        <section id="pilares">
+            <h3>Seis Pilares para la Transformación (2026-2030)</h3>
+            <div class="grid-pilares">
+                <div class="tarjeta-pilar">
+                    <h5>1. Estudiantado</h5>
+                    <p>Trayectorias completas, calidad educativa, permanencia, tutoría efectiva, becas, biblioteca híbrida e inclusión desde el ingreso hasta la titulación[cite: 2].</p>
                 </div>
-                
-                <!-- EJE 2 -->
-                <div class="tarjeta-eje">
-                    <h4>Eje 2: [Nombre del Eje - Ej. Innovación y Tecnología]</h4>
-                    <p>[Pega aquí la descripción o las acciones principales correspondientes al segundo eje de tu documento Word.]</p>
+                <div class="tarjeta-pilar">
+                    <h5>2. Investigación</h5>
+                    <p>Conocimiento pertinente, fortalecimiento de cuerpos académicos, proyectos colaborativos, divulgación científica e incorporación temprana del estudiantado[cite: 2].</p>
                 </div>
-                
-                <!-- EJE 3 -->
-                <div class="tarjeta-eje">
-                    <h4>Eje 3: [Nombre del Eje - Ej. Vinculación y Comunidad]</h4>
-                    <p>[Pega aquí la descripción o las acciones principales correspondientes al tercer eje de tu documento Word.]</p>
+                <div class="tarjeta-pilar">
+                    <h5>3. Cultura y Deporte</h5>
+                    <p>Comunidad activa y saludable mediante la reactivación de talleres culturales, espacios deportivos dignos y fomento a la identidad universitaria[cite: 2].</p>
                 </div>
-                
-                <!-- EJE 4 (Opcional, puedes borrar este bloque si solo son 3) -->
-                <div class="tarjeta-eje">
-                    <h4>Eje 4: [Nombre del Eje - Ej. Infraestructura]</h4>
-                    <p>[Pega aquí la descripción o las acciones principales correspondientes al cuarto eje de tu documento Word.]</p>
+                <div class="tarjeta-pilar">
+                    <h5>4. Dignificación</h5>
+                    <p>Desarrollo, reconocimiento, clima organizacional, satisfacción laboral y formación continua para el personal académico y administrativo[cite: 2].</p>
+                </div>
+                <div class="tarjeta-pilar">
+                    <h5>5. Gestión</h5>
+                    <p>Infraestructura segura, servicios transparentes, sistema de seguimiento de compromisos, sostenibilidad ambiental y simplificación administrativa[cite: 2].</p>
+                </div>
+                <div class="tarjeta-pilar">
+                    <h5>6. Incidencia</h5>
+                    <p>Vinculación regional efectiva, servicio social con sentido formativo, impulso al emprendimiento y compromiso con el desarrollo del oriente del Estado de México[cite: 2].</p>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN DE PROPUESTAS CONCRETAS -->
-        <section id="acciones">
-            <h3>Acciones Inmediatas</h3>
-            <p>Al iniciar la gestión, las primeras acciones se enfocarán en:</p>
+        <!-- CRITERIOS TRANSVERSALES -->
+        <section id="criterios">
+            <h3>Principios y Criterios Transversales</h3>
             <ul>
-                <li>[Acción concreta 1 de tu plan de trabajo]</li>
-                <li>[Acción concreta 2 de tu plan de trabajo]</li>
-                <li>[Acción concreta 3 de tu plan de trabajo]</li>
+                <li><strong>Tres sectores, una comunidad:</strong> Equilibrio e interdependencia entre estudiantado, personal académico y administrativo[cite: 2].</li>
+                <li><strong>Gestión basada en evidencia:</strong> Escucha activa, transparencia, rendición de cuentas y seguimiento documentado[cite: 2].</li>
+                <li><strong>Perspectiva de género e igualdad sustantiva:</strong> Reducción de barreras y trato equitativo[cite: 2].</li>
+                <li><strong>Inclusión y accesibilidad:</strong> Atención a la diversidad física, tecnológica y social[cite: 2].</li>
+                <li><strong>Cultura de paz:</strong> Diálogo constructivo, respeto a los derechos humanos y solución pacífica de diferencias[cite: 2].</li>
+                <li><strong>Sostenibilidad:</strong> Uso responsable del agua, la energía, los residuos y las áreas verdes[cite: 2].</li>
+            </ul>
+        </section>
+
+        <!-- RESUMEN CURRICULAR -->
+        <section id="cv">
+            <h3>Síntesis Curricular - Dra. Rebeca Teja Gutiérrez</h3>
+            <p><strong>Trayectoria Académica:</strong> Profesora de tiempo completo en el Centro Universitario UAEM Texcoco desde 2006 (profesora de asignatura de 2002 a 2006)[cite: 1].</p>
+            
+            <h4>Estudios Principales</h4>
+            <ul>
+                <li><strong>Doctorado:</strong> Doctorado en Problemas Económico Agroindustriales por el CIESTAAM, Universidad Autónoma Chapingo (2010)[cite: 1].</li>
+                <li><strong>Maestría:</strong> Maestría en Ciencias en Estudios del Desarrollo Rural por el Colegio de Postgraduados (2005)[cite: 1].</li>
+                <li><strong>Licenciatura:</strong> Contadora Pública por la ESCA del Instituto Politécnico Nacional (IPN) (1995)[cite: 1].</li>
+            </ul>
+
+            <h4>Distinciones y Reconocimientos</h4>
+            <ul>
+                <li>Investigadora Nacional Nivel Candidata (SNI / SECIHTI)[cite: 1].</li>
+                <li>Perfil Deseable PRODEP (desde 2006 de forma ininterrumpida hasta la fecha)[cite: 1].</li>
+                <li>Doctor Honoris Causa otorgado por la Universidad en Desarrollo Humano y Liderazgo (2023)[cite: 1].</li>
+                <li>Notas Laudatorias y reconocimientos institucionales por evaluaciones al desempeño docente[cite: 1].</li>
+                <li>Líder de Cuerpo Académico Nivel Consolidado ("Empresa, Educación y Tecnología")[cite: 1].</li>
             </ul>
         </section>
 
     </div>
 
     <footer>
-        <p><strong>Juan Carlos Moreno Sánchez</strong></p>
-        <p>Candidato a la Dirección del Centro Universitario UAEM Texcoco</p>
+        <p><strong>Dra. Rebeca Teja Gutiérrez</strong></p>
+        <p>Centro Universitario UAEMéx Texcoco — Programa de Trabajo 2026-2030</p>
     </footer>
 
 </body>
