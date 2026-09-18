@@ -6,13 +6,13 @@
     <title>Dra. Rebeca Teja Gutiérrez - Programa de Trabajo 2026-2030</title>
     <style>
         :root {
-            --morado-profundo: #2C163A; /* Morado institucional muy formal */
-            --morado-principal: #4A235A; /* Morado principal sobrio */
-            --morado-claro: #D7BDE2; /* Lila suave y formal */
-            --morado-muy-claro: #F4ECF7; /* Fondo sutil para tarjetas */
+            --morado-profundo: #2C163A; 
+            --morado-principal: #4A235A; 
+            --morado-claro: #D7BDE2; 
+            /* Se cambia el fondo general a un lila suave, sobrio y no brillante */
+            --fondo-lila-suave: #F3EBF6; 
             --texto-oscuro: #2C3E50;
             --texto-claro: #FFFFFF;
-            --fondo-gris: #FAFAFC;
         }
 
         * {
@@ -23,7 +23,7 @@
         }
 
         body {
-            background-color: var(--fondo-gris);
+            background-color: var(--fondo-lila-suave);
             color: var(--texto-oscuro);
             line-height: 1.6;
         }
@@ -36,7 +36,6 @@
             border-bottom: 6px solid var(--morado-claro);
         }
 
-        /* Estilo para la foto de la candidata */
         .perfil-foto-container {
             margin-bottom: 20px;
         }
@@ -88,7 +87,7 @@
             color: var(--morado-profundo);
             font-size: 1.6rem;
             margin-bottom: 20px;
-            border-bottom: 2px solid var(--morado-muy-claro);
+            border-bottom: 2px solid var(--fondo-lila-suave);
             padding-bottom: 8px;
         }
 
@@ -121,7 +120,7 @@
         }
 
         .tarjeta-pilar {
-            background-color: var(--morado-muy-claro);
+            background-color: var(--fondo-lila-suave);
             padding: 20px;
             border-radius: 6px;
             border-top: 4px solid var(--morado-principal);
@@ -136,6 +135,24 @@
         .tarjeta-pilar p {
             font-size: 0.95rem;
             margin-bottom: 0;
+        }
+
+        /* Estilo para el enlace de redes sociales */
+        .social-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--morado-principal);
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid var(--morado-principal);
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--morado-principal);
+            color: var(--texto-claro);
         }
 
         footer {
@@ -159,9 +176,7 @@
 <body>
 
     <header>
-        <!-- Contenedor de la fotografía de la candidata -->
         <div class="perfil-foto-container">
-            <!-- NOTA: Asegúrate de subir la imagen a tu repositorio con este mismo nombre (foto.jpg) o cambiar el atributo src -->
             <img src="foto.jpg" alt="Dra. Rebeca Teja Gutiérrez" class="perfil-foto">
         </div>
         <h1>Dra. Rebeca Teja Gutiérrez</h1>
@@ -171,13 +186,11 @@
 
     <div class="container">
         
-        <!-- PRESENTACIÓN -->
         <section id="presentacion">
             <h3>Presentación del Programa de Trabajo</h3>
             <p>El Centro Universitario UAEMéx Texcoco es una comunidad construida a lo largo de tres décadas por estudiantes, personal académico y administrativo. El periodo 2026–2030 representa una oportunidad para reconocer esa trayectoria y construir una nueva etapa de desarrollo institucional con una gestión cercana, basada en evidencia, con diálogo, planeación, seguimiento y rendición de cuentas.</p>
         </section>
 
-        <!-- SÍNTESIS DEL DIAGNÓSTICO -->
         <section id="diagnostico">
             <h3>Diagnóstico General Estratégico del CUTEX 2026</h3>
             <p>El CUTEX cuenta con fortalezas importantes pero también con áreas de atención identificadas a partir de la estadística institucional y los procesos recientes:</p>
@@ -189,7 +202,6 @@
             </ul>
         </section>
 
-        <!-- LOS SEIS PILARES -->
         <section id="pilares">
             <h3>Seis Pilares para la Transformación (2026-2030)</h3>
             <div class="grid-pilares">
@@ -220,7 +232,6 @@
             </div>
         </section>
 
-        <!-- CRITERIOS TRANSVERSALES -->
         <section id="criterios">
             <h3>Principios y Criterios Transversales</h3>
             <ul>
@@ -233,7 +244,6 @@
             </ul>
         </section>
 
-        <!-- RESUMEN CURRICULAR -->
         <section id="cv">
             <h3>Síntesis Curricular - Dra. Rebeca Teja Gutiérrez</h3>
             <p><strong>Trayectoria Académica:</strong> Profesora de tiempo completo en el Centro Universitario UAEM Texcoco desde 2006 (profesora de asignatura de 2002 a 2006).</p>
@@ -253,6 +263,11 @@
                 <li>Notas Laudatorias y reconocimientos institucionales por evaluaciones al desempeño docente.</li>
                 <li>Líder de Cuerpo Académico Nivel Consolidado ("Empresa, Educación y Tecnología").</li>
             </ul>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <p>Sigue los canales oficiales de comunicación:</p>
+                <a href="https://www.facebook.com/profile.php?id=61594263969921" target="_blank" class="social-link">Visitar Perfil de Facebook</a>
+            </div>
         </section>
 
     </div>
